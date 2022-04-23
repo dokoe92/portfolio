@@ -160,3 +160,39 @@ nav a {
 .git-icon{
     grid-area: git;
 }
+
+
+/*projects section*/
+
+.projects{
+    margin-top: 2.5rem;
+}
+
+.projects h2{
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.project-pic{
+    width: 70%;
+    height: 60%;
+}
+
+.projects-container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.project-container{
+    width: 21.857rem;
+    height: 15rem;
+    text-align: center;
+}
+.projects-container h3{
+    padding:0.5rem;
+    }
+
+.projects-container p{
+    padding: 0.125rem;
+}
