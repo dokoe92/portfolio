@@ -20,11 +20,16 @@ selector{
 
 
 /*Nav section*/
+
+
 nav{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: sticky;
     background-color: black;
     padding: 1.5rem 3.5rem;
     box-shadow: 0 2px 5px rgba(107, 107, 107, 0.726);
@@ -88,6 +93,7 @@ nav a {
 #about{
     width: 80%;
     margin: 0 auto;
+    margin-top: 2.5rem;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -102,4 +108,55 @@ nav a {
 }
 
 /*skills section*/
+#skills{
+    margin-top: 5rem;
+}
 
+.skills h2{
+    text-align: center;
+}
+
+.skills-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.skills-grid{
+    display: grid;
+    grid-template-areas:
+    "html css"
+    "js git";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr;
+    gap: 1.5rem;
+    padding: 2rem;
+
+}
+
+.skills-grid img{
+    height: 11.25rem;
+    width: 11.25rem;
+}
+
+.skills-card{
+    border: 1px solid transparent;
+    background-color: rgba(110, 105, 105, 0.726);
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgba(53, 53, 53, 0.726);
+}
+
+.html-icon{
+    grid-area: html;
+}
+
+.css-icon {
+    grid-area: css;
+}
+
+.js-icon{
+    grid-area: js;
+}
+
+.git-icon{
+    grid-area: git;
+}
