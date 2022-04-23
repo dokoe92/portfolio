@@ -5,6 +5,10 @@
     text-decoration: none;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-image: url(../images/background.jpg);
     color: white;
@@ -23,7 +27,8 @@ selector{
 
 
 nav{
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
     left: 0;
     z-index: 1;
@@ -53,6 +58,7 @@ nav a {
     align-items: center;
     padding: 5rem;
     gap: 5rem;
+    margin-top: 5rem;
 }
 
 .hero-image-container{
@@ -182,11 +188,12 @@ nav a {
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .project-container{
     width: 21.857rem;
-    height: 15rem;
+    height: 20rem;
     text-align: center;
 }
 .projects-container h3{
@@ -195,4 +202,48 @@ nav a {
 
 .projects-container p{
     padding: 0.125rem;
+}
+
+/*Contact section*/
+
+.contact-container{
+    border: 1px solid white;
+    border-radius: 20px;
+    display:flex;
+    justify-content: center;
+    width: 40%;
+    margin: 0 auto;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.input-field{
+    width: 100%;
+    border: 1px solid darkgray;
+    border-radius: 20px;
+}
+
+.contact-form label{
+    font-weight: bold;
+}
+
+.submit{
+    width: 100%;
+    font-weight: bold;
+    margin: 1rem 0;
+    background-color: blue;
+    color: white;
+    padding: 0.25rem;
+    border-radius: 20px;
+    transition: background-color 0.5s, color 0.2s;
+}
+
+.submit:hover{
+    background-color: lightblue;
+    color: black;
+}
+
+footer{
+    text-align: center;
+    margin: 3rem 0 1rem 0;
 }
