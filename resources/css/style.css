@@ -73,6 +73,18 @@ nav a {
     border-radius: 50%;
 }
 
+.profile-picture{
+    background-image: url(../images/profile\ normal.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid red;
+    border-radius: 50px;
+    width: 20rem;
+    height: 20rem;
+}
+    
+
 .hero-text-container{
     display:flex;
     flex-direction: column;

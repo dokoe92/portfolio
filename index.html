@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0 minimum-scale=1">
     <title>Dominik Köberl Web Dev</title>
     <link rel="stylesheet" href="./resources/css/style.css">
-    <script src="./resources/js/script.js" async></script>
+
 
     <!--fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,12 +35,12 @@
     <main>
         <section id="hero" class="hero"> 
             <div class="hero-image-container">
-                <img src="./resources/images/profile.PNG" alt="profile-picture" onerror = "https://github.com/dokoe92/portfolio/blob/main/resources/images/profile.PNG">
+                <img src="./resources/images/profile normal.jpg" alt="profile-picture" onerror = "https://github.com/dokoe92/portfolio/blob/main/resources/images/profile.PNG" id="profilePicture" >
             </div>
             <div class="hero-text-container">
                 <h2>Dominik Köberl</h2>
                 <h3>Web Developer</h3>
-                <button><a href="#contact">Contact me</a></button>
+                <button onclick="toggleProfileImg()">Happy Coding</button>
             </div>
         </section>
 
@@ -132,5 +132,6 @@
         <p>Built with &#x2661 by Dominik Köberl</p>
     </footer>
 
+    <script src="./resources/js/script.js" ></script>
 </body>
 </html>
